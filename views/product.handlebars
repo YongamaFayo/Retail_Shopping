@@ -1,6 +1,21 @@
 <head>
 
-
+<script>
+  
+    dataLayer.push({
+       'event': 'view_item',
+       'ecommerce': {
+          'items' : [
+	    {
+	       'item_name': '{{list.name}}',
+	        'item_quantity': '{{list.quantity}}',
+		'item_price': '{{list.cost}}',
+		'item_catagory': '{{list.catagory}}'
+	    }]
+	 }
+    
+     });
+ </script>
 
 	<title>Accel-Shopping | Product/{{list.name}}</title>
 
