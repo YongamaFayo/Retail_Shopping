@@ -15,6 +15,27 @@
 	 }
     
      });
+       
+ </script>
+ 
+ <script>
+  
+    dataLayer.push({
+       'event': 'Add To Cart_item',
+       'ecommerce': {
+          'items' : [
+	    {
+	       'item_name': '{{list.name}}',
+	        'item_quantity': '{{list.quantity}}',
+		'item_price': '{{list.cost}}',
+		'item_cart_total': '{{list.cart_total}}'
+	    }]
+	 }
+    
+     });
+     
+     
+     
  </script>
 
 	<title>Accel-Shopping | Product/{{list.name}}</title>
